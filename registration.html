@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <script src="registration.js"></script>
+  <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+  <div class="container">
+    <form id="form" onsubmit="validateForm(event)">
+      <h2>Registration Form</h2>
+
+      <div class="input-group">
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter your password">
+      </div>
+
+      <div class="input-group">
+        <label>Conform Password</label>
+        <input type="password" id="conform-password" placeholder="Confirm password">
+      </div>
+
+      <div class="input-group gender-group">
+        <label>Gender</label>
+        <div class="radio-options">
+          <input type="radio" name="gender" id="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="others">
+          <label for="others">Others</label>
+        </div>
+      </div>
+
+      <button type="submit" id="submit">Register</button>
+    </form>
+  </div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
